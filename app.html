@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- 🌸 FLOATING EMOJIS -->
+  <div class="emoji-container"></div>
+
+  <!-- 🌙 DARK MODE BUTTON -->
+  <button id="darkToggle" class="dark-btn">🌙</button>
+
+  <!-- 📦 MAIN CONTAINER -->
+  <div class="container">
+
+    <h1>Smart Task Manager</h1>
+
+    <!-- 🔓 LOGOUT -->
+    <button onclick="logout()">Logout</button>
+
+    <!-- ✍️ INPUT -->
+    <input type="text" id="input-box" placeholder="Enter your task">
+
+    <!-- 🤖 AI OUTPUT -->
+    <p id="ai-output">✨ AI Suggestion will appear here</p>
+
+    <<button id="addBtn">Add Task</button>
+<button id="aiBtn">Improve Task</button>
+<button id="logoutBtn">Logout</button>
+<button id="allBtn">All</button>
+<button id="doneBtn">Completed</button>
+<button id="pendingBtn">Pending</button>
+<button id="micBtn">🎤</button>
+    </div>
+
+    <!-- 🔍 FILTER -->
+    <div class="filters">
+      <button onclick="filterTasks('all')">All</button>
+      <button onclick="filterTasks('done')">Completed</button>
+      <button onclick="filterTasks('pending')">Pending</button>
+    </div>
+
+    <!-- 📋 TASK LIST -->
+    <ul id="list-container"></ul>
+
+  </div>
+
+  <!-- 🔥 FIREBASE CONFIG -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+    const firebaseConfig = {
+      const firebaseConfig = {
+  apiKey: "AIzaSyCucQxz9a1JM-2FvKdpZfHPwd6xrzNvpH0",
+  authDomain: "kavya12-9660b.firebaseapp.com",
+  projectId: "kavya12-9660b",
+  storageBucket: "kavya12-9660b.firebasestorage.app",
+  messagingSenderId: "568574917946",
+  appId: "1:568574917946:web:f88dfe2e3c8616f57c2403"
+};
+
+    const app = initializeApp(firebaseConfig);
+    window.firebaseApp = app;
+  </script>
+
+  <!-- ✅ MAIN SCRIPT -->
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>
